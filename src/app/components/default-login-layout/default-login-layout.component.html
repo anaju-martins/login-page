@@ -2,6 +2,7 @@
     <section class = "form-section">
         <img src="assets/svg/logo.svg"/>
         <h2>{{ title }}</h2>
+        <ng-content></ng-content>
         <div class="btn-wrapper">
             <button class="btn-primary">{{ primaryBtnText }}</button>
         <div class="divider">
@@ -9,7 +10,7 @@
             <span>or</span>
             <div></div>
         </div>
-        <button class="btn-secundary">{{ secundaryBtnText }}</button>
+        <button class="btn-secundary">{{ secondaryBtnText }}</button>
         </div>
     </section>
     <section class = "main-section">

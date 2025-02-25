@@ -1,4 +1,4 @@
-@use "../../../styles/variables.scss" as *;
+@use "../../../styles/variables.scss" as vars;
 
 main {
     display: flex;
@@ -19,7 +19,7 @@ main {
         gap: 8px;
 
         flex-grow: 1;
-        background-color: $gray-bg ;
+        background-color: vars.$gray-bg ;
     }
 
     .form-section{
@@ -27,7 +27,7 @@ main {
         padding: 0 35px;
         
         img{
-            margin-bottom:30px ;
+            margin-bottom: 30px ;
         }
 
         h2 {
@@ -52,14 +52,14 @@ main {
                 width: 100%;
 
                 font-size: 14px;
-                color: $gray-bg;
+                color: vars.$gray-bg;
                 font-weight: 400;
                 text-transform: uppercase;
 
                 div{
                     flex-grow: 1;
                     height: 2px;
-                    background-color: $gray-bg;
+                    background-color: vars.$gray-bg;
                 }
             }
 
@@ -74,14 +74,14 @@ main {
                 cursor: pointer;
     
                 &.btn-primary{
-                    background-color: $primary-color;
+                    background-color: vars.$primary-color;
                     color: white;
                     box-shadow:0px 8px 12px rgba(148.23004603385925, 64.33935597538948, 255, 0.20000000298023224);
                 }
     
                 &.btn-secundary{
-                    border: 3px solid $primary-color;
-                    color: $primary-color;
+                    border: 1px solid vars.$primary-color;
+                    color: vars.$primary-color;
                 }
             }
 
